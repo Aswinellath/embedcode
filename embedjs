@@ -1,0 +1,58 @@
+class TruncateLines extends HTMLElement {
+  constructor() {
+    super();
+    const template = document.getElementById("truncate-lines-template");
+    const templateContent = template.content;
+
+    this.attachShadow({ mode: 'open' }).appendChild(templateContent.cloneNode(true));
+  }
+  
+  connectedCallback() {
+    this.lineClamp = this.getAttribute('line-clamp');
+    this.container = this.shadowRoot.querySelector('.truncate-lines');
+    this.clampEl = this.shadowRoot.querySelector('.truncate-lines__clamp');
+    this.container.style.setProperty("--truncate-line-clamp", this.lineClamp);
+    this.clampRect = this.clampEl.getBoundingClientRect();
+    this.overflowEl = this.shadowRoot.querySelector('.truncate-lines__overflow');
+    this.overflowRect = this.overflowEl.getBoundingClientRect();
+    
+    this.setClosedHeight();
+    
+    this.toggleButton = this.shadowRoot.querySelector('.truncate-lines__expand');
+    this.toggleButton.addEventListener('click', () => this.handleClick());
+  }
+  
+  setClosedHeight() {
+    this.container.style.setProperty("--truncate-height", `${this.clampRect.height}px`);
+  }
+  
+  setOpenedHeight() {
+    this.container.style.setProperty("--truncate-height-expanded", `${this.overflowRect.height}px`);
+  }
+  
+  handleClick() {
+    if (this.container.classList.contains('truncate-lines--expanded')) {
+      this.close();
+    } else {
+      this.open();
+    }
+  }
+  
+  open() {
+    this.container.classList.remove('truncate-lines--line-clamped');
+    window.requestAnimationFrame(() => {
+      this.overflowRect = this.overflowEl.getBoundingClientRect();
+      this.setOpenedHeight();
+      this.container.classList.add('truncate-lines--expanded');
+    });
+  }
+  
+  close() {
+    this.container.classList.remove('truncate-lines--expanded');
+    setTimeout(() => {
+      this.container.classList.add('truncate-lines--line-clamped');
+    }, 300);
+  }
+}
+
+customElements.define("truncate-lines", TruncateLines);
