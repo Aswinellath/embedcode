@@ -1,0 +1,79 @@
+<truncate-lines line-clamp="5">
+  <h2>First box</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac magna tellus. Curabitur sed faucibus leo. Vivamus id elit nec nisi ultrices rutrum. Sed ornare metus sit amet arcu pulvinar feugiat. Phasellus eleifend, dolor vitae malesuada dignissim, diam ligula semper purus, id pulvinar magna nibh nec neque. Ut auctor sodales dictum. Cras erat tortor, vestibulum et porttitor vitae, consequat et erat. Nullam ullamcorper tempor leo in fermentum. Curabitur ultrices tempus pulvinar. Proin a finibus odio. Pellentesque nec urna id ex facilisis dictum. Proin elementum cursus dolor, in molestie sem fermentum eget.</p>
+
+  <p>In rutrum id eros sed tincidunt. Vivamus lobortis orci id orci elementum, eget molestie ante varius. Pellentesque imperdiet accumsan ipsum, vitae auctor lacus. Praesent sit amet imperdiet neque. Integer in orci ligula. Nulla finibus interdum sapien tincidunt vestibulum. Cras id risus eu nisl scelerisque faucibus. Donec tellus nibh, convallis eu nisi a, tempus sollicitudin elit. Cras lorem mauris, ullamcorper ac arcu a, sodales accumsan ex. Aliquam luctus lacinia nisi, id tincidunt tortor aliquam vestibulum. Fusce faucibus, felis id consectetur tempor, felis nunc bibendum nunc, sit amet porttitor erat ex quis tortor. Nulla mattis eros interdum dictum aliquet.</p>
+
+  <p>Nunc at nisi ac dolor egestas tempus. Aenean ornare nibh risus. Nulla tristique eu tellus sed interdum. Duis eu ligula sed orci venenatis elementum. Nullam ullamcorper tellus a ultrices sollicitudin. Maecenas lacinia augue velit, a sodales libero feugiat sed. Sed mauris nisl, dignissim at placerat sed, aliquet vel dolor. Aliquam erat volutpat.</p>
+</truncate-lines>
+
+<truncate-lines line-clamp="3">
+  <h2>Second box</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac magna tellus. Curabitur sed faucibus leo. Vivamus id elit nec nisi ultrices rutrum. Sed ornare metus sit amet arcu pulvinar feugiat. Phasellus eleifend, dolor vitae malesuada dignissim, diam ligula semper purus, id pulvinar magna nibh nec neque. Ut auctor sodales dictum. Cras erat tortor, vestibulum et porttitor vitae, consequat et erat. Nullam ullamcorper tempor leo in fermentum. Curabitur ultrices tempus pulvinar. Proin a finibus odio. Pellentesque nec urna id ex facilisis dictum. Proin elementum cursus dolor, in molestie sem fermentum eget.</p>
+
+  <p>In rutrum id eros sed tincidunt. Vivamus lobortis orci id orci elementum, eget molestie ante varius. Pellentesque imperdiet accumsan ipsum, vitae auctor lacus. Praesent sit amet imperdiet neque. Integer in orci ligula. Nulla finibus interdum sapien tincidunt vestibulum. Cras id risus eu nisl scelerisque faucibus. Donec tellus nibh, convallis eu nisi a, tempus sollicitudin elit. Cras lorem mauris, ullamcorper ac arcu a, sodales accumsan ex. Aliquam luctus lacinia nisi, id tincidunt tortor aliquam vestibulum. Fusce faucibus, felis id consectetur tempor, felis nunc bibendum nunc, sit amet porttitor erat ex quis tortor. Nulla mattis eros interdum dictum aliquet.</p>
+
+  <p>Nunc at nisi ac dolor egestas tempus. Aenean ornare nibh risus. Nulla tristique eu tellus sed interdum. Duis eu ligula sed orci venenatis elementum. Nullam ullamcorper tellus a ultrices sollicitudin. Maecenas lacinia augue velit, a sodales libero feugiat sed. Sed mauris nisl, dignissim at placerat sed, aliquet vel dolor. Aliquam erat volutpat.</p>
+</truncate-lines>
+
+<truncate-lines line-clamp="7">
+  <h2>Third box</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac magna tellus. Curabitur sed faucibus leo. Vivamus id elit nec nisi ultrices rutrum. Sed ornare metus sit amet arcu pulvinar feugiat. Phasellus eleifend, dolor vitae malesuada dignissim, diam ligula semper purus, id pulvinar magna nibh nec neque. Ut auctor sodales dictum. Cras erat tortor, vestibulum et porttitor vitae, consequat et erat. Nullam ullamcorper tempor leo in fermentum. Curabitur ultrices tempus pulvinar. Proin a finibus odio. Pellentesque nec urna id ex facilisis dictum. Proin elementum cursus dolor, in molestie sem fermentum eget.</p>
+
+  <p>In rutrum id eros sed tincidunt. Vivamus lobortis orci id orci elementum, eget molestie ante varius. Pellentesque imperdiet accumsan ipsum, vitae auctor lacus. Praesent sit amet imperdiet neque. Integer in orci ligula. Nulla finibus interdum sapien tincidunt vestibulum. Cras id risus eu nisl scelerisque faucibus. Donec tellus nibh, convallis eu nisi a, tempus sollicitudin elit. Cras lorem mauris, ullamcorper ac arcu a, sodales accumsan ex. Aliquam luctus lacinia nisi, id tincidunt tortor aliquam vestibulum. Fusce faucibus, felis id consectetur tempor, felis nunc bibendum nunc, sit amet porttitor erat ex quis tortor. Nulla mattis eros interdum dictum aliquet.</p>
+
+  <p>Nunc at nisi ac dolor egestas tempus. Aenean ornare nibh risus. Nulla tristique eu tellus sed interdum. Duis eu ligula sed orci venenatis elementum. Nullam ullamcorper tellus a ultrices sollicitudin. Maecenas lacinia augue velit, a sodales libero feugiat sed. Sed mauris nisl, dignissim at placerat sed, aliquet vel dolor. Aliquam erat volutpat.</p>
+</truncate-lines>
+
+<template id="truncate-lines-template">
+  <style>
+    .truncate-lines {
+      display: block;
+      max-width: 550px;
+      margin: 0 auto 2rem;
+      padding: 2rem;
+      border-radius: 6px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+    
+    .truncate-lines__clamp {
+      box-sizing: border-box;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      max-height: var(--truncate-height, auto);
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    
+    .truncate-lines--line-clamped .truncate-lines__clamp {
+      -webkit-line-clamp: var(--truncate-line-clamp, none);
+    }
+    
+    .truncate-lines--expanded .truncate-lines__clamp {
+      max-height: var(--truncate-height-expanded, auto);
+    }
+    
+    .truncate-lines__expand {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0;
+      border: 0;
+      color: blue;
+      background: none;
+      cursor: pointer;
+    }
+  </style>
+  <div class="truncate-lines truncate-lines--line-clamped">
+    <div class="truncate-lines__clamp">
+      <div class="truncate-lines__overflow">
+        <slot></slot>
+      </div>
+    </div>
+    <button
+      type="button"
+      class="truncate-lines__expand"
+    >
+      Read all +
+    </button>
+  </div>
+</template>
