@@ -1,0 +1,13 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+truncate-lines > :first-child {
+  margin-top: 0;
+}
